@@ -3,7 +3,7 @@ package com.example.demo.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "usuario")
+@Table(name = "persona")
 public class UsuarioModel {
 
     @Id
@@ -12,7 +12,7 @@ public class UsuarioModel {
     private Long id;
 
     private String nombre;
-    private String email;
+    private Integer edad;
     private Integer prioridad;
 
     public void setPrioridad(Integer prioridad){
@@ -39,12 +39,12 @@ public class UsuarioModel {
         this.nombre = nombre;
     }
 
-    public String getEmail() {
-        return email;
+    public Integer getEdad() {
+        return edad;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void getEdad(Integer edad) {
+        this.edad = edad;
     }
     
 }
